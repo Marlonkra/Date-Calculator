@@ -12,7 +12,7 @@ function setup() {
   inp.size(100);
   inp.input(myInputEvent);
   
-  eventDate = new Date(jahr, 3, 28, 0, 0);
+  eventDate = new Date(jahr, month()-1, day(), 0, 0);
   
 }
 
