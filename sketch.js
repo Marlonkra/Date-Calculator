@@ -2,7 +2,7 @@ let eventdate;
 let slip = 0;
 
 function setup() {
-  createCanvas(800, 800);
+  //createCanvas(800, 800);
   textSize(50);
   textAlign(LEFT, CENTER);
   let jahr = year();
@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+  createCanvas(windowWidth, windowHeight);
   background(220);
   textSize(25);
   text("Bitte geben sie ein Datum ein:",0,30);
