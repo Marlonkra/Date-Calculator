@@ -2,7 +2,7 @@ let eventdate;
 let slip = 0;
 
 function setup() {
-  //createCanvas(800, 800);
+  
   textSize(50);
   textAlign(LEFT, CENTER);
   let jahr = year();
@@ -12,7 +12,7 @@ function setup() {
   inp.size(100);
   inp.input(myInputEvent);
   
-  eventDate = new Date(jahr, month()-1, day(), 0, 0);
+  eventDate = new Date(jahr, month()-1, day(), 0,0);
   
 }
 
@@ -47,18 +47,18 @@ function draw() {
     let w = int(d / 7);
     d = d % 7;
     
-    text(w + " Wochen", 150, 150);
-    text(d + " Tage", 150, 200);
-    text(h + " Stunden", 150, 250);
+    text(w + " Wochen", windowWidth/2, 150);
+    text(d + " Tage", windowWidth/2, 200);
+    text(h + " Stunden", windowWidth/2, 250);
   
   //Draw the current date to the screen.
   
   if(slip[2] == undefined){
-    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, 50, 350);
+    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, windowWidth/2, 350);
   }
   else
     {
-  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], 50, 350);
+  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], windowWidth/2, 350);
     }
 }
 
@@ -70,3 +70,4 @@ function myInputEvent() {
   //console.log(slip[2]); //jahr
   eventDate = new Date(slip[2], slip[1]-1,slip[0], 0,0);
 }
+
