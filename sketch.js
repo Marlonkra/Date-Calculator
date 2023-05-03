@@ -54,11 +54,11 @@ function draw() {
   //Draw the current date to the screen.
   
   if(slip[2] == undefined){
-    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, windowWidth/4, 350);
+    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, windowWidth/2, 350);
   }
   else
     {
-  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], windowWidth/4, 350);
+  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], windowWidth/2, 350);
     }
 }
 
