@@ -49,7 +49,7 @@ function draw() {
     
     text(w + " Wochen", windowWidth/2, 150);
     text(d + " Tage", windowWidth/2, 200);
-    text(h + " Stunden", windowWidth/2, 250);
+    text(h + " Stunden-", windowWidth/2, 250);
   
   //Draw the current date to the screen.
   
