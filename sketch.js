@@ -47,18 +47,18 @@ function draw() {
     let w = int(d / 7);
     d = d % 7;
     
-    text(w + " Wochen", windowWidth/4, 150);
-    text(d + " Tage", windowWidth/4, 200);
-    text(h + " Stunden", windowWidth/4, 250);
+    text(w + " Wochen", windowWidth/2, 150);
+    text(d + " Tage", windowWidth/2, 200);
+    text(h + " Stunden", windowWidth/2, 250);
   
   //Draw the current date to the screen.
   
   if(slip[2] == undefined){
-    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, windowWidth/5, 350);
+    text(day() + "/" + month() + "/" + year() + " - " + nowD + "/" + nowM + "/" + nowY, windowWidth/4, 350);
   }
   else
     {
-  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], windowWidth/5, 350);
+  text(day() + "/" + month() + "/" + year() + " - " + slip[0] + "/" + slip[1] + "/" + slip[2], windowWidth/4, 350);
     }
 }
 
